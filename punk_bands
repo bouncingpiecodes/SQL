@@ -1,0 +1,35 @@
+CREATE TABLE punk_records (
+    id INTEGER PRIMARY KEY,
+    band TEXT,
+    album TEXT,
+    minutes INTEGER
+);
+
+INSERT INTO punk_records VALUES (1, "The Ramones", "Ramones", 15);
+INSERT INTO punk_records VALUES (2, "The Clash", "London Calling", 20);
+INSERT INTO punk_records VALUES (3, "Fugazi", "Repeater", 30);
+INSERT INTO punk_records VALUES (4, "The Bouncing Souls", "How I Spent My Summer Vacation", 25);
+INSERT INTO punk_records VALUES (5, "L7", "Bricks Are Heavy", 40);
+INSERT INTO punk_records VALUES (6, "The Distillers", "Coral Fang", 35);
+INSERT INTO punk_records VALUES (7, "Against Me!", "Transgender Dysphoria Blues", 45);
+INSERT INTO punk_records VALUES (8, "The Cramps", "Songs the Lord Taught Us", 30);
+INSERT INTO punk_records VALUES (9, "Refused", "The Shape of Punk to Come", 40);
+INSERT INTO punk_records VALUES (10, "Bikini Kill", "Pussy Whipped", 25);
+INSERT INTO punk_records VALUES (11, "Screaming Females", "Ugly", 35);
+INSERT INTO punk_records VALUES (12, "The Exploding Hearts", "Guitar Romantic", 28);
+INSERT INTO punk_records VALUES (13, "Sheer Mag", "Need to Feel Your Love", 42);
+INSERT INTO punk_records VALUES (14, "Generacion Suicida", "Con La Muerte a Tu Lado", 38);
+INSERT INTO punk_records VALUES (15, "None More Black", "Loud About Loathing", 33);
+
+SELECT * FROM punk_records
+ORDER BY minutes ASC;
+
+SELECT * FROM punk_records
+ORDER BY band DESC;
+
+SELECT * FROM punk_records
+ORDER BY album ASC;
+
+SELECT * FROM punk_records
+ORDER BY album DESC;
+
